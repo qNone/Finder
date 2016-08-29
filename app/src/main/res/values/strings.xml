@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Finder</string>
+    <string name="action_search">Search</string>
+    <string name="no_search_results_text">Nothing stored in Phone Application matches your search. Try again!</string>
+    <string name="application_logo">Application Logo</string>
+    <string name="no_search_results_image">no search results image</string>
+    <string name="action_settings">Settings</string>
+    <string name="launcher_mode">Launcher Mode</string>
+    <string name="share_mode">Share Mode</string>
+    <string name="appInfo_mode">Application Info Mode</string>
+    <string name="uninstall_mode">Uninstall Mode</string>
+    <string name="kill_mode">Kill Application Mode</string>
+    <string name="market_mode">Market Mode</string>
+    <string name="no_data">No Data.</string>
+    <string name="action_task">TaskList</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radioGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/radio_appInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/appInfo_mode" />
+
+    <RadioButton
+        android:id="@+id/radio_kill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/kill_mode" />
+
+    <RadioButton
+        android:id="@+id/radio_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/launcher_mode" />
+
+    <RadioButton
+        android:id="@+id/radio_market"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/market_mode" />
+
+    <RadioButton
+        android:id="@+id/radio_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/share_mode" />
+
+    <RadioButton
+        android:id="@+id/radio_uninstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/uninstall_mode" />
+
+</RadioGroup>
