@@ -90,10 +90,12 @@ public class DataBaseUtil {
     public int queryByCount (String packageName) {
         SQLiteDatabase db = dataHelper.getReadableDatabase();
         String sql = String.format("select %s, %s, %s, %s from %s where package=%s", DataHelper.APP_NAME,
-                DataHelper.APP_PACKAGE, DataHelper.APP_PATH, DataHelper.APP_ICON, DataHelper.TABLE_NAME, "'" + packageName + "'");
+                DataHelper.APP_PACKAGE, DataHelper.APP_PATH, DataHelper.APP_LAUNCHER_COUNT, DataHelper.TABLE_NAME, "'" + packageName + "'");
         Cursor cursor = db.rawQuery(sql, null);
-        int count = Integer.parseInt(cursor.getString(cursor.getColumnIndex(DataHelper.APP_LAUNCHER_COUNT)));
-        Log.e("1112sa", count+"");
+        int count = 0;
+        if (cursor.moveToFirst()) {
+            count = Integer.parseInt(cursor.getString(cursor.getColumnIndex(DataHelper.APP_LAUNCHER_COUNT)));
+        }
         cursor.close();
         db.close();
         return count;
